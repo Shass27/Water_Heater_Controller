@@ -1,0 +1,47 @@
+# =========================
+# Arduino build artifacts
+# =========================
+*.hex
+*.elf
+*.bin
+*.map
+*.eep
+*.o
+*.a
+
+# =========================
+# Arduino IDE temp / cache
+# =========================
+*.tmp
+*.bak
+*.swp
+.arduino/
+arduino-*/
+
+# =========================
+# Serial logs
+# =========================
+*.log
+
+# =========================
+# macOS junk
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# =========================
+# Windows junk
+# =========================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# =========================
+# Secrets / local config
+# =========================
+secrets.h
+config.h
+wifi_credentials.h
