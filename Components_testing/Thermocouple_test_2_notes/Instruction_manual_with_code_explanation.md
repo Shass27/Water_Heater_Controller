@@ -92,7 +92,7 @@ Once heating control is active (either user-set or default):
 - Interval:
   - `if ((millis() - lastTempRead) >= 1000)`
 - Reading:
-  - `double t = thermocouple.getCelsius();`
+  - `double t = thermocouple.readCelsius();`
   - If valid: `temperatureC = t;`
 
 ### Short press increases Set Temp by 1°C (only in Set Temp screen)
