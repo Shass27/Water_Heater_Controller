@@ -72,13 +72,14 @@ The automatic mode provides two operational scenarios:
 
 #### 4.1.1 Default Operation
 - System initializes with current temperature as baseline
-- After 10-second idle period, establishes temperature range: [T_current + 2°C, T_current + 7°C]
+- After 10-second idle period, establishes asymmetric temperature range: [T_current + 2°C, T_current + 7°C]
 - Maintains temperature within this range using hysteresis control
+- Asymmetric range provides gradual warming from ambient temperature
 
 #### 4.1.2 User-Configured Operation
 - User sets desired temperature via button press (increment by 1°C per press)
-- After 3-second confirmation delay, establishes control range: [T_set - 2°C, T_set + 2°C]
-- System maintains temperature within specified band
+- After 3-second confirmation delay, establishes symmetric control range: [T_set - 2°C, T_set + 2°C]
+- System maintains temperature within tighter band centered on user preference
 
 **Control Logic**: 
 - Heater activates when temperature ≤ lower threshold
@@ -120,7 +121,7 @@ The manual mode offers two distinct control methods:
 ### 5.2 Software Installation
 
 #### Prerequisites
-- Arduino IDE (version 1.8.x or later)
+- Arduino IDE (version 2.x or later)
 - ESP32 board support package
 
 #### Required Libraries
