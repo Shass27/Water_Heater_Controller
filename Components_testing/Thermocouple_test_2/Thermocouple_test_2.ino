@@ -206,7 +206,6 @@ void setup() {
     }
     display.clearDisplay();
     display.setTextColor(WHITE);
-
     idleTimer = millis();
 }
 
