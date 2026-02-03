@@ -184,29 +184,7 @@ The `Components_testing` directory contains modular test programs developed duri
 
 These test programs facilitate troubleshooting and component verification.
 
-## 9. Future Enhancements
-
-Potential improvements for subsequent iterations:
-
-1. **Data Logging**: Implement temperature history recording to SD card or cloud storage
-2. **Wi-Fi Connectivity**: Remote monitoring and control capabilities
-3. **PID Control**: Replace bang-bang control with PID for reduced temperature oscillation
-4. **Energy Monitoring**: Track power consumption metrics
-5. **Multiple Sensor Support**: Redundant temperature sensing for increased reliability
-6. **Mobile Application**: Dedicated smartphone app for advanced configuration
-
-## 10. Safety Considerations
-
-⚠️ **Important Safety Notes**:
-
-- This system controls potentially hazardous electrical heating equipment
-- Ensure proper electrical isolation between control circuits and heating elements
-- Use appropriately rated relay modules for heater power requirements
-- Install thermal fuses and other safety devices as per local electrical codes
-- Regular maintenance and calibration recommended for thermocouple sensors
-- Maximum temperature limit (70°C) prevents scalding but system should not replace manufacturer safety devices
-
-## 11. License and Acknowledgments
+## 9. License and Acknowledgments
 
 This project is provided as-is for educational and development purposes. Users assume all responsibility for implementation and safety compliance.
 
@@ -215,6 +193,5 @@ This project is provided as-is for educational and development purposes. Users a
 - MAX6675 Library Contributors
 
 ---
-
-*Project Documentation - Water Heater Controller System*  
-*Embedded Systems Development*
+**Authors:** Shass27, sumedha2932-source
+**Platform:** Arduino IDE
