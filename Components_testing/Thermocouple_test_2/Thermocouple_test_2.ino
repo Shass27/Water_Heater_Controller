@@ -2,7 +2,7 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
-#include <MAX6675.h>
+#include <max6675.h>
 
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
@@ -52,7 +52,7 @@ unsigned long blinkTimer = 0;
 void readTemperature() {
     if ((millis() - lastTempRead) >= 1000) {
         lastTempRead = millis();
-        double t = thermocouple.getCelsius();
+        double t = thermocouple.readCelsius();
         if (!isnan(t)) temperatureC = t;
         else Serial.println("Error reading temp");
     }
@@ -206,7 +206,6 @@ void setup() {
     }
     display.clearDisplay();
     display.setTextColor(WHITE);
-
     idleTimer = millis();
 }
 
